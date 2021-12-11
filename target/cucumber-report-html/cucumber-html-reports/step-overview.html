@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/reporting.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber-JVM Reports  - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber-JVM Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="feature-overview.html">Features</a></li>
+        <li role="presentation" ><a href="tag-overview.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="step-overview.html">Steps</a></li>
+        <li role="presentation" ><a href="failures-overview.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid" id="build-info">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-1">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Project</th>
+                          <th>Number</th>
+                        <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="info">
+            <td>ContentPortalReports</td>
+                          <td>1</td>
+                        <td>11 Dec 2021, 22:04</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div id="report-lead" class="container-fluid>
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <h2>Steps Statistics</h2>
+              <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+          </div>
+  </div>
+</div>
+
+<div class="container-fluid" id="summary">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+              <table id="tablesorter" class="stats-table table-hover">
+
+          <thead>
+            <tr class="header">
+              <th>Implementation</th>
+              <th>Occurrences</th>
+              <th>Duration</th>
+              <th>Average</th>
+              <th>Ratio</th>
+            </tr>
+          </thead>
+
+          <tbody>
+                          <tr>
+                <td class="location">stepDefinations.Footballpage.click_on_Premier_League()</td>
+                <td>1</td>
+                <td class="duration" data-value="1824575000">1s 824ms</td>
+                <td class="duration" data-value="1824575000">1s 824ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinations.Footballpage.open_the_Ladbrokes_application()</td>
+                <td>3</td>
+                <td class="duration" data-value="12184634000">12s 184ms</td>
+                <td class="duration" data-value="4061544666">4s 061ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinations.Footballpage.setup()</td>
+                <td>3</td>
+                <td class="duration" data-value="12939619000">12s 939ms</td>
+                <td class="duration" data-value="4313206333">4s 313ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinations.Footballpage.teardown(io.cucumber.java.Scenario)</td>
+                <td>3</td>
+                <td class="duration" data-value="407671000">407ms</td>
+                <td class="duration" data-value="135890333">135ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinations.Footballpage.the_Football_menu_appears()</td>
+                <td>1</td>
+                <td class="duration" data-value="110404000">110ms</td>
+                <td class="duration" data-value="110404000">110ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinations.Footballpage.user_Click_on_random_article_in_the_Sport_News_section()</td>
+                <td>1</td>
+                <td class="duration" data-value="2774607000">2s 774ms</td>
+                <td class="duration" data-value="2774607000">2s 774ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinations.Footballpage.user_Hover_mouse_over_on_Football_tab()</td>
+                <td>1</td>
+                <td class="duration" data-value="690703000">690ms</td>
+                <td class="duration" data-value="690703000">690ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinations.Footballpage.user_press_Enter_on_the_keyboard()</td>
+                <td>1</td>
+                <td class="duration" data-value="9950146000">9s 950ms</td>
+                <td class="duration" data-value="9950146000">9s 950ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinations.Footballpage.user_provides_search_phrase(java.lang.String)</td>
+                <td>1</td>
+                <td class="duration" data-value="986286000">986ms</td>
+                <td class="duration" data-value="986286000">986ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinations.Footballpage.verify_that_Premier_League_page_has_been_opened()</td>
+                <td>1</td>
+                <td class="duration" data-value="182702000">182ms</td>
+                <td class="duration" data-value="182702000">182ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinations.Footballpage.verify_that_more_than_one_page_of_results_have_been_returned()</td>
+                <td>1</td>
+                <td class="duration" data-value="26355464000">26s 355ms</td>
+                <td class="duration" data-value="26355464000">26s 355ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinations.Footballpage.verify_that_the_correct_article_has_been_opened()</td>
+                <td>1</td>
+                <td class="duration" data-value="2368862000">2s 368ms</td>
+                <td class="duration" data-value="2368862000">2s 368ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                      </tbody>
+
+          <tfoot class="total">
+            <tr>
+              <td>12</td>
+              <td>18</td>
+              <td class="duration">1m 10s 775ms</td>
+              <td class="duration">3s 931ms</td>
+              <td>Totals</td>
+            </tr>
+          </tfoot>
+
+        </table>
+          </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

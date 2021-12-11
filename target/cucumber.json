@@ -1,0 +1,262 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-12-11T16:32:54.847Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5172486000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinations.Footballpage.setup()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Journey 1",
+        "description": "",
+        "id": "ladbrokes-functionality;journey-1",
+        "after": [
+          {
+            "result": {
+              "duration": 126803000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinations.Footballpage.teardown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4364779000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "open the Ladbrokes application",
+            "match": {
+              "location": "stepDefinations.Footballpage.open_the_Ladbrokes_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 690703000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User Hover mouse over on Football tab",
+            "match": {
+              "location": "stepDefinations.Footballpage.user_Hover_mouse_over_on_Football_tab()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 110404000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the Football menu appears",
+            "match": {
+              "location": "stepDefinations.Footballpage.the_Football_menu_appears()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1824575000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "click on Premier League",
+            "match": {
+              "location": "stepDefinations.Footballpage.click_on_Premier_League()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 182702000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Verify that Premier League page has been opened",
+            "match": {
+              "location": "stepDefinations.Footballpage.verify_that_Premier_League_page_has_been_opened()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-12-11T16:33:07.376Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3598642000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinations.Footballpage.setup()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "Journey 2",
+        "description": "",
+        "id": "ladbrokes-functionality;journey-2",
+        "after": [
+          {
+            "result": {
+              "duration": 131874000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinations.Footballpage.teardown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3720604000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "open the Ladbrokes application",
+            "match": {
+              "location": "stepDefinations.Footballpage.open_the_Ladbrokes_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2774607000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User Click on random article in the Sport News section",
+            "match": {
+              "location": "stepDefinations.Footballpage.user_Click_on_random_article_in_the_Sport_News_section()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2368862000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Verify that the correct article has been opened",
+            "match": {
+              "location": "stepDefinations.Footballpage.verify_that_the_correct_article_has_been_opened()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-12-11T16:33:19.986Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4168491000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinations.Footballpage.setup()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Journey 3",
+        "description": "",
+        "id": "ladbrokes-functionality;journey-3",
+        "after": [
+          {
+            "result": {
+              "duration": 148994000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinations.Footballpage.teardown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4099251000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "open the Ladbrokes application",
+            "match": {
+              "location": "stepDefinations.Footballpage.open_the_Ladbrokes_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 986286000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User provides \"Serie A\" search phrase",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Serie A\"",
+                  "offset": 14
+                }
+              ],
+              "location": "stepDefinations.Footballpage.user_provides_search_phrase(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 9950146000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User press Enter on the keyboard",
+            "match": {
+              "location": "stepDefinations.Footballpage.user_press_Enter_on_the_keyboard()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 26355464000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Verify that more than one page of results have been returned",
+            "match": {
+              "location": "stepDefinations.Footballpage.verify_that_more_than_one_page_of_results_have_been_returned()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Ladbrokes functionality",
+    "description": "",
+    "id": "ladbrokes-functionality",
+    "keyword": "Feature",
+    "uri": "file:Features/FootBall.feature",
+    "tags": []
+  }
+]
